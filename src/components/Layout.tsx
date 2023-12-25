@@ -1,7 +1,7 @@
 import React from "react";
 
 type LayoutProps = {
-  children: string;
+  children: React.JSX.Element;
   className: String;
 };
 
