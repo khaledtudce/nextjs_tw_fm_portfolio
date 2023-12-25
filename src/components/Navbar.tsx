@@ -69,7 +69,7 @@ const Navbar = () => {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.8 }}
         >
-          <TwitterIcon className="w-6 mr-3" rest="" />
+          <TwitterIcon className="w-[28px] mx-1" rest="" />
         </motion.a>
         <motion.a
           href="https://github.com"
@@ -77,7 +77,7 @@ const Navbar = () => {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.8 }}
         >
-          <GithubIcon className="w-6 mx-3" rest="" />
+          <GithubIcon className="w-[28px] mx-1" rest="" />
         </motion.a>
         <motion.a
           href="https://www.linkedin.com"
@@ -85,7 +85,7 @@ const Navbar = () => {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.8 }}
         >
-          <LinkedInIcon className="w-6 mx-3" rest="" />
+          <LinkedInIcon className="w-[28px] mx-1" rest="" />
         </motion.a>
         <motion.a
           href="https://www.pinterest.de"
@@ -93,7 +93,7 @@ const Navbar = () => {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.8 }}
         >
-          <PinterestIcon className="w-6 mx-3" rest="" />
+          <PinterestIcon className="w-[28px] mx-1" rest="" />
         </motion.a>
         <motion.a
           href="https://dribble.com"
@@ -101,7 +101,7 @@ const Navbar = () => {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.8 }}
         >
-          <DribbbleIcon className="w-6 ml-3" rest="" />
+          <DribbbleIcon className="w-[28px] mx-1" rest="" />
         </motion.a>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[50%]">
