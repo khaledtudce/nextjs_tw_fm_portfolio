@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Layout from "../components/Layout";
+import Layout from "../components/shared/Layout";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
-import AnimatedText from "../components/AnimatedText";
+import AnimatedText from "../components/shared/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "../components/Icons";
-import Hireme from "@/components/Hireme";
+import { LinkArrow } from "../components/shared/Icons";
+import Hireme from "@/components/about/HiremeAnimatedButton";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 export default function Home() {

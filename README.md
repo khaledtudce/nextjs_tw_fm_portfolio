@@ -17,3 +17,9 @@
 
 - [framer-motion](https://www.framer.com/motion/) <br />
 - [Tailwind css](https://tailwindcss.com/) <br />
+
+### Lession learned
+
+- How to make a box shadow on Image,
+  `<div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-3xl bg-dark" />`
+- Used Scroll animation from Framer-motion to make Experience lines

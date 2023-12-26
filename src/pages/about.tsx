@@ -1,11 +1,13 @@
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
+import AnimatedText from "@/components/shared/AnimatedText";
+import Layout from "@/components/shared/Layout";
 import Head from "next/head";
 import React from "react";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import Image from "next/image";
-import { AnimatedNumbers } from "../components/AnimatedNumbers";
-import Skills from "@/components/Skills";
+import { AnimatedNumbers } from "../components/about/AnimatedNumbers";
+import Skills from "@/components/about/Skills";
+import Experience from "@/components/about/Experience";
+import Education from "@/components/about/Educations";
 
 const about = () => {
   return (
@@ -80,6 +82,8 @@ const about = () => {
             </div>
           </div>
           <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
