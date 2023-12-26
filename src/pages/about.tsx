@@ -5,6 +5,7 @@ import React from "react";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import Image from "next/image";
 import { AnimatedNumbers } from "../components/AnimatedNumbers";
+import Skills from "@/components/Skills";
 
 const about = () => {
   return (
@@ -78,6 +79,7 @@ const about = () => {
               </div>
             </div>
           </div>
+          <Skills />
         </Layout>
       </main>
     </>

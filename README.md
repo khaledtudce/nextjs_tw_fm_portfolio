@@ -11,6 +11,7 @@
 - React Developer Rount Icon generated from, https://www.canva.com/ <br />
 - React Developer Icon background removed from, https://www.erase.bg/ <br />
 - Convert Image to SVG, https://new.express.adobe.com/tools/convert-to-svg
+- Skills spreading on spaces, https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient
 
 ### External Libraries used in this project:
 
