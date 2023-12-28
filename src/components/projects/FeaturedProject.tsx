@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { GithubIcon } from "@/components/shared/Icons";
 import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 export type FeaturedProjectProps = {
   type: string;
@@ -11,6 +12,7 @@ export type FeaturedProjectProps = {
   link: string;
   github: string;
 };
+const FrameImage = motion(Image);
 
 export const FeaturedProject = ({
   type,
@@ -21,14 +23,20 @@ export const FeaturedProject = ({
   github,
 }: FeaturedProjectProps) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid bg-light shadow-2xl p-12 relative rounded-br-2xl">
+    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl">
       <div className="absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
       <Link
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
         href={link}
         target="_blank"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FrameImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
         <span className="text-primary font-medium text-xl">{type}</span>
