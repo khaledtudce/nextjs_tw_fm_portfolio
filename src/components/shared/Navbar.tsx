@@ -7,9 +7,12 @@ import {
   DribbbleIcon,
   GithubIcon,
   LinkedInIcon,
+  MoonIcon,
   PinterestIcon,
+  SunIcon,
   TwitterIcon,
 } from "./Icons";
+import useThemeSwitcher from "@/hooks/useThemeSwitcher";
 
 type CustomerLinkProps = {
   href: string;
@@ -34,6 +37,8 @@ const CustomLink = ({ href, title, className = "" }: CustomerLinkProps) => {
 };
 
 const Navbar = () => {
+  const [mode, setMode] = useThemeSwitcher();
+
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
       <nav className="flex items-center gap-3">
@@ -103,6 +108,13 @@ const Navbar = () => {
         >
           <DribbbleIcon className="w-[28px] mx-1" rest="" />
         </motion.a>
+        <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
+          {mode === "dark" ? (
+            <SunIcon className="fill-dark" rest="" />
+          ) : (
+            <MoonIcon className="fill-dark" rest="" />
+          )}
+        </button>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[50%]">
         <Logo />
