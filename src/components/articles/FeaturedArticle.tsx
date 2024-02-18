@@ -21,8 +21,8 @@ export const FeaturedArticle = ({
   link,
 }: FeaturedArticleProps) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[1rem] bg-dark rounded-br-3xl" />
+    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark dark:bg-dark dark:border-light rounded-2xl">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[1rem] bg-dark dark:bg-light rounded-br-3xl" />
       <Link
         className="w-full inline-block cursor-pointer overflow-hidden rounded-lg"
         href={link}
@@ -42,7 +42,9 @@ export const FeaturedArticle = ({
         </h2>
       </Link>
       <p className="text-sm mb-2">{summery}</p>
-      <span className="text-primary font-semibold">{time}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold">
+        {time}
+      </span>
     </li>
   );
 };

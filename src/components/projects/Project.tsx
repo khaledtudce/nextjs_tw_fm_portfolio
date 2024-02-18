@@ -16,7 +16,7 @@ const FrameImage = motion(Image);
 
 export const Project = ({ title, type, img, link, github }: ProjectProps) => {
   return (
-    <article className="w-full flex flex-col items-center justify-between rounded-2xl border border-solid border-dark bg-light shadow-2xl p-6 relative">
+    <article className="w-full flex flex-col items-center justify-between rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-6 relative">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[1rem] bg-dark rounded-br-3xl" />
       <Link
         className="w-full cursor-pointer overflow-hidden rounded-lg"
@@ -32,7 +32,9 @@ export const Project = ({ title, type, img, link, github }: ProjectProps) => {
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+          {type}
+        </span>
         <Link
           className="hover:underline underline-offset-2"
           href={link}

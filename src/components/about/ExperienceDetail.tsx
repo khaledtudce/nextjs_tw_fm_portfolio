@@ -35,14 +35,14 @@ export const ExperienceDetail = ({
         <h3 className="capitalize font-bold text-2xl">
           {position}&nbsp;
           <a
-            className="text-primary capitalize"
+            className="text-primary capitalize dark:text-primaryDark"
             target="_blank"
             href={companyLink}
           >
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
         <p className="font-medium w-full">{work}</p>

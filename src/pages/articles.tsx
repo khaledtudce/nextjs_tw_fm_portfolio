@@ -20,7 +20,7 @@ const articles = () => {
         <title>Khaled | Projects</title>
         <meta name="projects" content="This page describes my projects" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <>
             <AnimatedText

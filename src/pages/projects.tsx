@@ -13,7 +13,7 @@ const project = () => {
         <title>Khaled | Projects</title>
         <meta name="projects" content="This page describes my projects" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:bg-dark dark:text-light">
         <Layout className="pt-16">
           <>
             <AnimatedText
