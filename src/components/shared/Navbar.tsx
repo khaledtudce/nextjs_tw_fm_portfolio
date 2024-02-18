@@ -28,7 +28,7 @@ const CustomLink = ({ href, title, className = "" }: CustomerLinkProps) => {
       <span
         className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full translate-[width] ease duration-300 ${
           router.asPath === href ? "w-full" : "w-0"
-        }`}
+        } dark:bg-light`}
       >
         &nbsp;
       </span>
@@ -40,7 +40,7 @@ const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
 
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light">
       <nav className="flex items-center gap-3">
         <CustomLink
           href="/"
@@ -108,7 +108,12 @@ const Navbar = () => {
         >
           <DribbbleIcon className="w-[28px] mx-1" rest="" />
         </motion.a>
-        <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
+        <button
+          className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+            mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+          }`}
+          onClick={() => setMode(mode === "light" ? "dark" : "light")}
+        >
           {mode === "dark" ? (
             <SunIcon className="fill-dark" rest="" />
           ) : (
