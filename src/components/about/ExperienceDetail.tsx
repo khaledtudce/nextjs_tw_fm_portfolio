@@ -23,7 +23,7 @@ export const ExperienceDetail = ({
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-center"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-center lg:w-[70%] md:w-[80%]"
     >
       <ExpLiIcons reference={ref} />
       <motion.div
@@ -32,7 +32,7 @@ export const ExperienceDetail = ({
         transition={{ duration: 0.5, type: "spring" }}
         viewport={{ once: true }}
       >
-        <h3 className="capitalize font-bold text-2xl">
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {position}&nbsp;
           <a
             className="text-primary capitalize dark:text-primaryDark"
@@ -42,10 +42,10 @@ export const ExperienceDetail = ({
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {address}
         </span>
-        <p className="font-medium w-full">{work}</p>
+        <p className="font-medium w-full md:text-sm">{work}</p>
       </motion.div>
     </li>
   );
