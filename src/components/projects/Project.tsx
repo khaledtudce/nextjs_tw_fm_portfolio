@@ -16,7 +16,7 @@ const FrameImage = motion(Image);
 
 export const Project = ({ title, type, img, link, github }: ProjectProps) => {
   return (
-    <article className="w-full flex flex-col items-center justify-between rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-6 relative">
+    <article className="w-full flex flex-col items-center justify-between rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-6 relative xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[1rem] bg-dark rounded-br-3xl" />
       <Link
         className="w-full cursor-pointer overflow-hidden rounded-lg"
@@ -34,7 +34,7 @@ export const Project = ({ title, type, img, link, github }: ProjectProps) => {
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
           {type}
         </span>
         <Link
@@ -42,17 +42,19 @@ export const Project = ({ title, type, img, link, github }: ProjectProps) => {
           href={link}
           target="_blank"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link
-            className="text-lg font-semibold underline"
+            className="text-lg font-semibold underline md:text-base"
             href={link}
             target="_blank"
           >
             Visit
           </Link>
-          <Link className="w-8" href={github} target="_blank">
+          <Link className="w-8 md:w-6" href={github} target="_blank">
             <GithubIcon className="" rest="" />
           </Link>
         </div>

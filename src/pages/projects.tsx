@@ -18,9 +18,9 @@ const project = () => {
           <>
             <AnimatedText
               text="Imagination Trumps Knowledge!"
-              className="mb-16"
+              className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
             />
-            <div className="grid grid-cols-12 gap-24 gap-y-32">
+            <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-16 sm:gap-x-0">
               <div className="col-span-12">
                 <FeaturedProject
                   title="Crypto Screener Application"
@@ -36,7 +36,7 @@ const project = () => {
                 />
               </div>
 
-              <div className="col-span-6">
+              <div className="col-span-6 sm:col-span-12">
                 <Project
                   title="Crypto Screener Application"
                   link="/"
@@ -45,7 +45,7 @@ const project = () => {
                   github="https://github.com"
                 />
               </div>
-              <div className="col-span-6">
+              <div className="col-span-6 sm:col-span-12">
                 <Project
                   title="Crypto Screener Application"
                   link="/"
@@ -70,7 +70,7 @@ const project = () => {
                 />
               </div>
 
-              <div className="col-span-6">
+              <div className="col-span-6 sm:col-span-12">
                 <Project
                   title="Crypto Screener Application"
                   link="/"
@@ -79,7 +79,7 @@ const project = () => {
                   github="https://github.com"
                 />
               </div>
-              <div className="col-span-6">
+              <div className="col-span-6 sm:col-span-12">
                 <Project
                   title="Crypto Screener Application"
                   link="/"
