@@ -35,7 +35,7 @@ export const MovingImg = ({ title, img, link }: MovingImgProps) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <h2 className="capitalize text-xl font-semibold hover: underline">
+      <h2 className="capitalize text-xl font-semibold hover:underline">
         {title}
       </h2>
       <FrameImage
@@ -45,7 +45,7 @@ export const MovingImg = ({ title, img, link }: MovingImgProps) => {
         ref={imgRef}
         src={img}
         alt={title}
-        className="z-10 w-96 h-auto hidden absolute rounded-lg"
+        className="z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden"
       />
     </Link>
   );
